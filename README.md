@@ -1,5 +1,7 @@
 # whytoworry Website
 
+link to website: https://whytoworry.vercel.app/
+
 ## Overview
 This is the official website for **whytoworry**, a platform that empowers startups and brands to de-risk innovation and accelerate market entry with data-driven strategies. The site features a responsive design, an AI-powered Idea Validator, and a contact form for consultations.
 
