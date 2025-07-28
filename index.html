@@ -1,0 +1,194 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whytoworry | Validate Smarter. Launch Faster.</title>
+    <meta name="description" content="whytoworry empowers startups and brands to de-risk innovation and accelerate market entry with data-driven strategies for validation, and growth.">
+    <meta name="author" content="whytoworry">
+    <link rel="canonical" href="https://www.whytoworry.com/"> 
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.whytoworry.com/">
+    <meta property="og:title" content="whytoworry | Validate Smarter. Launch Faster.">
+    <meta property="og:description" content="We empower startups to de-risk innovation with data-driven strategies.">
+    <meta property="og:image" content="https://www.whytoworry.com/assets/og-image.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.whytoworry.com/">
+    <meta property="twitter:title" content="whytoworry | Validate Smarter. Launch Faster.">
+    <meta property="twitter:description" content="We empower startups to de-risk innovation with data-driven strategies.">
+    <meta property="twitter:image" content="https://www.whytoworry.com/assets/og-image.png">
+    <link rel="icon" href="assets/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="relative">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-purple-500/30 rounded-full filter blur-3xl opacity-50 -translate-x-1/2 -translate-y-1/2 floating-element" aria-hidden="true"></div>
+    <div class="absolute top-1/2 right-0 w-96 h-96 bg-violet-600/30 rounded-full filter blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2 floating-element-reverse" aria-hidden="true"></div>
+    <div class="absolute bottom-0 left-1/4 w-72 h-72 bg-fuchsia-500/20 rounded-full filter blur-3xl opacity-40 floating-element" aria-hidden="true"></div>
+    <div class="relative z-10">
+        <header id="header" class="sticky top-0 z-50 transition-all duration-300">
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Main navigation">
+                <a href="#" class="text-2xl font-bold text-white">whytoworry</a>
+                <a href="#contact" class="hidden md:inline-block px-6 py-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold rounded-lg shadow-lg transition-transform transform hover:scale-105 btn-gradient-sweep">
+                    Get Started
+                </a>
+            </nav>
+        </header>
+        <section id="hero" class="container mx-auto px-6 py-24 md:py-32 text-center" aria-labelledby="hero-heading">
+            <h1 id="hero-heading" class="text-5xl md:text-7xl font-extrabold text-white leading-tight">
+                <span class="inline-block animate-bounce mr-2" aria-hidden="true">🧠</span> 
+                Validate Smarter. <span class="block md:inline">Launch Faster.</span>
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
+                We empower startups, businesses, and brands to de-risk innovation and accelerate market entry with data-driven strategies.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-violet-600 hover:bg-violet-700 text-white font-bold rounded-lg shadow-2xl transition-transform transform hover:scale-105 btn-gradient-sweep">
+                    Book a Free Call
+                </a>
+                <a href="#idea-validator" class="w-full sm:w-auto px-8 py-4 bg-transparent border-2 border-violet-400 text-violet-300 hover:bg-violet-500/20 hover:text-white font-bold rounded-lg transition-all duration-300">
+                    ✨ Try our AI Idea Validator
+                </a>
+            </div>
+        </section>
+        <main>
+            <section id="idea-validator" class="py-20 bg-white/5" aria-labelledby="validator-heading">
+                <div class="container mx-auto px-6 reveal">
+                    <div class="text-center mb-12 max-w-3xl mx-auto">
+                        <h2 id="validator-heading" class="text-4xl font-bold text-white">AI Idea Validator</h2>
+                        <p class="mt-3 text-slate-400">Have a business idea? Get an instant, high-level analysis from our AI consultant to identify potential strengths and challenges.</p>
+                    </div>
+                    <div class="max-w-2xl mx-auto glassmorphism rounded-2xl p-8">
+                        <div>
+                            <label for="idea-input" class="sr-only">Your Business Idea</label>
+                            <textarea id="idea-input" rows="4" placeholder="Describe your business idea here... e.g., 'A subscription box for rare indoor plants.'" class="w-full bg-black/30 text-white border-2 border-white/20 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition placeholder-slate-400"></textarea>
+                            <button id="validate-idea-btn" class="mt-4 w-full px-8 py-4 bg-violet-600 hover:bg-violet-700 text-white font-bold rounded-lg shadow-2xl transition-transform transform hover:scale-105 btn-gradient-sweep disabled:opacity-50 disabled:cursor-not-allowed">
+                                ✨ Validate My Idea
+                            </button>
+                        </div>
+                        <div id="validator-output" class="mt-6">
+                            <div id="loader" class="hidden mx-auto"></div>
+                            <div id="validator-results" class="text-slate-300"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="py-20" aria-labelledby="services-heading">
+                <div class="container mx-auto px-6 reveal">
+                    <div class="text-center mb-16">
+                        <h2 id="services-heading" class="text-4xl font-bold text-white">Our Core Services</h2>
+                        <p class="mt-3 text-slate-400">Everything you need to validate and grow your business.</p>
+                    </div>
+                    <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <li class="group service-card rounded-xl p-8 border border-white/10 bg-black/20 hover:bg-violet-900/40 hover:border-violet-500 transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-violet-500/20 mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                                <i data-lucide="search-code" class="text-violet-400 w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Market Research</h3>
+                            <p class="text-slate-400">Deep-dive analysis into market trends, competitor landscapes, and consumer behavior to find your unique opportunity.</p>
+                        </li>
+                        <li class="group service-card rounded-xl p-8 border border-white/10 bg-black/20 hover:bg-violet-900/40 hover:border-violet-500 transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-violet-500/20 mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                                <i data-lucide="check-check" class="text-violet-400 w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Product Validation</h3>
+                            <p class="text-slate-400">Test your ideas with real users. We provide MVP testing and feedback loops to ensure product-market fit before you invest heavily.</p>
+                        </li>
+                        <li class="group service-card rounded-xl p-8 border border-white/10 bg-black/20 hover:bg-violet-900/40 hover:border-violet-500 transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-violet-500/20 mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                                <i data-lucide="rocket" class="text-violet-400 w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Go-to-Market Strategy</h3>
+                            <p class="text-slate-400">From pricing to positioning and promotion, we build a comprehensive roadmap for a powerful and successful launch.</p>
+                        </li>
+                        <li class="group service-card rounded-xl p-8 border border-white/10 bg-black/20 hover:bg-violet-900/40 hover:border-violet-500 transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-violet-500/20 mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                                <i data-lucide="building-2" class="text-violet-400 w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Business Setup Advisory</h3>
+                            <p class="text-slate-400">Navigating legal, financial, and operational setup. We make sure your business is built on a solid foundation.</p>
+                        </li>
+                        <li class="group service-card rounded-xl p-8 border border-white/10 bg-black/20 hover:bg-violet-900/40 hover:border-violet-500 transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-violet-500/20 mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                                <i data-lucide="handshake" class="text-violet-400 w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Investor Matchmaking</h3>
+                            <p class="text-slate-400">We connect you with the right VCs and angel investors from our curated network who believe in your vision.</p>
+                        </li>
+                        <li class="group service-card rounded-xl p-8 border border-white/10 bg-black/20 hover:bg-violet-900/40 hover:border-violet-500 transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-violet-500/20 mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                                <i data-lucide="bar-chart-3" class="text-violet-400 w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Growth Hacking</h3>
+                            <p class="text-slate-400">Implement agile marketing tactics to rapidly grow your user base and market presence after launch.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="about" class="py-24 bg-white/5" aria-labelledby="about-heading">
+                <div class="container mx-auto px-6 text-center reveal">
+                    <h2 id="about-heading" class="about-title inline-block text-4xl font-bold text-white relative pb-4 mb-6">
+                        Who We Are
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-violet-500 rounded-full"></span>
+                    </h2>
+                    <p class="about-text max-w-3xl mx-auto text-slate-300 leading-relaxed text-lg">
+                        At whytoworry, we are a collective of strategists, researchers, and market experts dedicated to transforming bold ideas into successful ventures. We bridge the gap between concept and customer, providing the critical insights and strategic frameworks needed to navigate the complexities of modern business. Our mission is to be the catalyst for your growth, ensuring every decision is informed, every move is strategic, and every launch is a success.
+                    </p>
+                </div>
+            </section>
+            <section id="contact" class="py-20" aria-labelledby="contact-heading">
+                <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center reveal">
+                    <div class="text-center lg:text-left">
+                        <h2 id="contact-heading" class="text-4xl font-bold text-white">Ready to Build What's Next?</h2>
+                        <p class="mt-4 text-slate-300 text-lg max-w-lg mx-auto lg:mx-0">
+                            Let's talk about your vision. Schedule a complimentary consultation to find out how we can help you validate your next big idea and craft a winning strategy for launch.
+                        </p>
+                    </div>
+                    <div class="glassmorphism rounded-2xl p-8 shadow-2xl shadow-violet-900/20">
+                        <form action="https://formspree.io/f/xldlbjeo" method="POST">
+                            <h3 class="text-2xl font-bold text-white mb-6 text-center">Send us a Message</h3>
+                            <div class="space-y-5">
+                                <div>
+                                    <label for="name" class="sr-only">Full Name</label>
+                                    <input type="text" name="name" id="name" placeholder="Full Name" required class="w-full bg-black/30 text-white border-2 border-white/20 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition">
+                                </div>
+                                <div>
+                                    <label for="email" class="sr-only">Email Address</label>
+                                    <input type="email" name="email" id="email" placeholder="Email Address" required class="w-full bg-black/30 text-white border-2 border-white/20 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition">
+                                </div>
+                                <div>
+                                    <label for="message" class="sr-only">Message</label>
+                                    <textarea name="message" id="message" rows="4" placeholder="How can we help?" required class="w-full bg-black/30 text-white border-2 border-white/20 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition"></textarea>
+                                </div>
+                                <button type="submit" class="w-full px-8 py-4 bg-violet-600 hover:bg-violet-700 text-white font-bold rounded-lg shadow-2xl transition-transform transform hover:scale-105 btn-gradient-sweep">
+                                    Submit Consultation Request
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-black/20 py-8">
+            <div class="container mx-auto px-6 text-center text-slate-400">
+                <a href="#" class="text-xl font-bold text-white">whytoworry</a>
+                <p class="text-sm mt-1">Validate Smarter. Launch Faster.</p>
+                <div class="flex justify-center mt-4">
+                    <a href="https://www.instagram.com/whytoworryyy" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-violet-400 transition-colors" aria-label="whytoworry on Instagram">
+                        <i data-lucide="instagram" class="w-6 h-6"></i>
+                    </a>
+                </div>
+                <p class="text-xs mt-6">&copy; <span id="current-year"></span> whytoworry. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/validator.js"></script>
+</body>
+</html>
+```
