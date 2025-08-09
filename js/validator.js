@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 Here is the idea: "${ideaText}"`;
             const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
             const payload = { contents: chatHistory };
-            const apiKey = "AIzaSyDL3hT3CRnO0uzNmqlHaZ_dw6URC3IP_Bc";
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+            const apiKey = "ur api key";
+            const apiUrl = `customize`;
             try {
                 const response = await fetch(apiUrl, {
                     method: 'POST',
